@@ -4,7 +4,7 @@
 
 ### Comandos
 
-#### init
+#### Init
 
 ###### Comando
 
@@ -16,7 +16,7 @@ terraform init
 
 Inicializa as configurações terraform, como download de módulos.
 
-#### validate
+#### Validate
 
 ###### Comando
 
@@ -28,7 +28,7 @@ terraform validate
 
 Valida sua configuração do terraform.
 
-#### plan
+#### Plan
 
 ###### Comando
 
@@ -55,12 +55,36 @@ Cria o planejamento da sua infra e salva no tfplan para usar quando precisa subi
 ###### Comando
 
 ```bash
-terraform show -json tfplan > tfplan.json
+terraform plan -var-file="dev/terraform.tfvars"
 ```
 
 ###### Descrição
 
-Grava o planejamento em json para fica mais fácil de vê.
+Cria o planejamento da sua infra passando o arquivo de variaveis.
+
+#### Apply
+
+###### Comando
+
+```bash
+terraform apply
+```
+
+###### Descrição
+
+Cria infra do provider designado, ex: AWS.
+
+#### Destroy
+
+###### Comando
+
+```bash
+terraform destroy
+```
+
+###### Descrição
+
+Destrói infra do provider designado, ex: AWS.
 
 ##### Obs: Nunca faça o commit do plan, pois contem varias informações sensiveis.
 
