@@ -12,7 +12,9 @@
 terraform init
 ```
 
-Descrição: Inicializa as configurações terraform, como download de módulos.
+###### Descrição
+
+Inicializa as configurações terraform, como download de módulos.
 
 #### validate
 
@@ -24,7 +26,7 @@ terraform validate
 
 ###### Descrição
 
-- Valida sua configuração do terraform.
+Valida sua configuração do terraform.
 
 #### plan
 
@@ -46,7 +48,9 @@ Cria o planejamento da sua infra.
 terraform plan -out tfplan
 ```
 
-- Descrição: Cria o planejamento da sua infra e salva no tfplan para usar quando precisa subir a mesma novamente.
+###### Descrição
+
+Cria o planejamento da sua infra e salva no tfplan para usar quando precisa subir a mesma novamente.
 
 ###### Comando
 
@@ -54,7 +58,9 @@ terraform plan -out tfplan
 terraform show -json tfplan > tfplan.json
 ```
 
-- Descrição: Grava o planejamento em json para fica mais fácil de vê.
+###### Descrição
+
+Grava o planejamento em json para fica mais fácil de vê.
 
 ##### Obs: Nunca faça o commit do plan, pois contem varias informações sensiveis.
 
