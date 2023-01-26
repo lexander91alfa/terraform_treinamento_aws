@@ -1,5 +1,13 @@
 # Terraform Treinamento aws
 
+O Terraform é uma ferramenta de código aberto “Infrastructure as Code”, criada pela HashiCorp.
+
+Uma ferramenta de codificação declarativa , o Terraform permite que os desenvolvedores usem uma linguagem de configuração de alto nível chamada HCL (HashiCorp Configuration Language) para descrever a nuvem de “estado final” desejada ou a infraestrutura local para executar um aplicativo. Em seguida, ele gera um plano para atingir esse estado final e executa o plano para provisionar a infraestrutura.
+
+Como o Terraform usa uma sintaxe simples, pode provisionar infraestrutura em várias nuvens e datacenters locais e pode provisionar novamente a infraestrutura com segurança e eficiência em resposta a alterações de configuração, atualmente é uma das ferramentas de automação de infraestrutura mais populares disponíveis. Se sua organização planeja implantar um ambiente de nuvem híbrida ou multicloud , provavelmente você desejará ou precisará conhecer o Terraform.
+
+[Fonte](https://www.ibm.com/topics/terraform)
+
 ## Comandos Terraform
 
 ### Comandos
