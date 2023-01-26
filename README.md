@@ -46,7 +46,7 @@ terraform plan
 
 ###### Descrição
 
-Cria o planejamento da sua infra.
+Cria o planejamento da infra.
 
 ##### Variações do comando
 
@@ -58,7 +58,17 @@ terraform plan -out tfplan
 
 ###### Descrição
 
-Cria o planejamento da sua infra e salva no tfplan para usar quando precisa subir a mesma novamente.
+Cria o planejamento da infra e salva no tfplan para usar quando precisa subir a mesma novamente.
+
+###### Comando
+
+```bash
+terraform show -json tfplan > tfplan.json
+```
+
+###### Descrição
+
+Grava tfplan em um arquivo json.
 
 ###### Comando
 
@@ -81,6 +91,18 @@ terraform apply
 ###### Descrição
 
 Cria infra do provider designado, ex: AWS.
+
+##### Variações do comando
+
+###### Comando
+
+```bash
+terraform apply -auto-approve
+```
+
+###### Descrição
+
+Cria infra do provider designado sem pedir autorização, ex: AWS.
 
 #### Destroy
 
