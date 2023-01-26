@@ -1,5 +1,6 @@
 # instancia t2.micro ubunto
 resource "aws_instance" "dev" {
+  # Se count = 0 não vai criar a instancia
   count         = 0
   ami           = "ami-00874d747dde814fa"
   instance_type = "t2.micro"
